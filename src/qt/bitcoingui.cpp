@@ -307,7 +307,7 @@ void BitcoinGUI::createActions(bool fIsTestnet)
     openAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_FileIcon), tr("Open &URI..."), this);
     openAction->setStatusTip(tr("Open a yenten: URI or payment request"));
 
-    showHelpMessageAction = new QAction(QApplication::style()->standardIcon(QStyle::SP_MessageBoxInformation), tr("&Command-line options"), this);
+    showHelpMessageAction = new QAction(QIcon(":/icons/info"), tr("&Command-line options"), this);
     showHelpMessageAction->setStatusTip(tr("Show the Yenten Core help message to get a list with possible Yenten command-line options"));
 
     connect(quitAction, SIGNAL(triggered()), qApp, SLOT(quit()));
